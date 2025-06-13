@@ -111,6 +111,31 @@ int main (){
             cout << "Enter your Choice (1-4): ";
             cin >> ch;
             cout << endl;
+
+            switch (ch){
+                case '1': {
+                    q.insert();
+                    break;
+                }
+                case '2': {
+                    q.remove();
+                    break;
+                }
+                case '3': {
+                    q.display();
+                    break;
+                }
+                case '4': {
+                    return 0;
+                }
+                default: {
+                    cout << "invalid option!!" << endl;
+                    break;
+                }
+            }
+        }
+        catch (exception& e) {
+            cout << "Check for the values entered." << endl;
         }
     }
 }
